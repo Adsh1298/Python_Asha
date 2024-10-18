@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'main.css') }}">
+</head>
+<body>
+    <h1>Hello world from Python</h1>
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="allusers">List of Users</a>
+        <a href="register">Add User</a>
+        <a href="aboutus">About Us</a>
+    </div>
+    <hr>
+    <p>Welcome {{admin.name}}</p>
+    <p>Your residence: {{admin.address}}</p>
+    <p>Your Email Address:  {{admin.email}}</p>
+
+</body>
+</html>
